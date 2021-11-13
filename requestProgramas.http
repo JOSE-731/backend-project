@@ -1,0 +1,33 @@
+###
+
+GET http://localhost:9000/programas HTTP/1.1
+
+###
+
+POST http://localhost:9000/programas HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombrePrograma"     : "Ingeniería informática",
+    "numSemestres"   : 9,
+    "codPrograma"  : 7895,
+    "Jornada" : 123,
+    "Facultad_idFacultad": 2,
+    "Facultad_TipoInstitucio_idTipoInstitucion": 1
+}
+
+###
+DELETE http://localhost:9000/programas/3 HTTP/1.1
+
+###   
+PUT http://localhost:9000/programas/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombrePrograma"     : "Ingeniería informática",
+    "numSemestres"   : 9,
+    "codPrograma"  : 7895,
+    "Jornada" : 123,
+    "Facultad_idFacultad": 2,
+    "Facultad_TipoInstitucio_idTipoInstitucion": 1
+}

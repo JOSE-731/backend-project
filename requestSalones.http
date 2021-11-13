@@ -1,0 +1,31 @@
+###
+
+GET http://localhost:9000/salones HTTP/1.1
+
+###
+
+POST http://localhost:9000/salones HTTP/1.1
+Content-Type: application/json
+
+{
+    "tipoSalon"     : 1,
+    "bloque"   : 1,
+    "capacidad"            : 25,
+    "nomenclatura" : 02,
+    "Horarios_idHorario": 2
+}
+
+###
+DELETE http://localhost:9000/salones/3 HTTP/1.1
+
+###   
+PUT http://localhost:9000/salones/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "tipoSalon"     : 1,
+    "bloque"   : 1,
+    "capacidad"            : 25,
+    "nomenclatura" : 02,
+    "Horarios_idHorario": 2
+}

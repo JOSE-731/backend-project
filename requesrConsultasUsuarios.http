@@ -1,0 +1,14 @@
+###
+GET http://localhost:9000/consultas-usuario/super-usuario HTTP/1.1
+
+###
+GET http://localhost:9000/consultas-usuario/administrador HTTP/1.1
+
+###
+GET http://localhost:9000/consultas-usuario/coordinador HTTP/1.1
+
+###
+GET http://localhost:9000/consultas-usuario/registro-control HTTP/1.1
+
+###
+GET http://localhost:9000/consultas-usuario/docentes HTTP/1.1

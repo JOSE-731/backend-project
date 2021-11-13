@@ -1,0 +1,39 @@
+###
+
+GET http://localhost:9000/materias HTTP/1.1
+
+###
+
+POST http://localhost:9000/materias HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombreMateria"     : "Marcela",
+    "codMateria"   : "Perez",
+    "Semestre_idSemestre" : "ddmarcela@gmail.com",
+    "Semestre_Programas_idPorgrama" : 45545239,
+    "Semestre_Programas_Facultad_idFacultad": 2,
+    "Semestre_Programas_Facultad_TipoInstitucion_idTipoInstitucion" : 2,
+    "Profesores_idProfesor": 1,
+    "MateriaModular_idMateriaModular": 1,
+    "Horarios_idHorario": 1
+}
+
+###
+DELETE http://localhost:9000/materias/3 HTTP/1.1
+
+###   
+PUT http://localhost:9000/materias/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombreMateria"     : "Marcela",
+    "codMateria"   : "Perez",
+    "Semestre_idSemestre" : "ddmarcela@gmail.com",
+    "Semestre_Programas_idPorgrama" : 45545239,
+    "Semestre_Programas_Facultad_idFacultad": 2,
+    "Semestre_Programas_Facultad_TipoInstitucion_idTipoInstitucion" : 2,
+    "Profesores_idProfesor": 1,
+    "MateriaModular_idMateriaModular": 1,
+    "Horarios_idHorario": 1
+}

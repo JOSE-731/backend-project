@@ -1,0 +1,27 @@
+###
+
+GET http://localhost:9000/facultades HTTP/1.1
+
+###
+
+POST http://localhost:9000/facultades HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombreFacultad"     : "Ingeniería",
+    "numProgramas"   : 5,
+    "TipoInstitucion_idTipoInstitucion": 1
+}
+
+###
+DELETE http://localhost:9000/facultades/3 HTTP/1.1
+
+###   
+PUT http://localhost:9000/facultades/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombreFacultad"     : "Marcela",
+    "numProgramas"   : "Perez",
+    "TipoInstitucion_idTipoInstitucion": 1
+}
